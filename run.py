@@ -5,8 +5,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 app.config.update(
-    DEBUG = True,
-    ENV = 'development'
+    DEBUG = False,
 )
 
 @app.route('/', methods=['GET', 'POST'])
