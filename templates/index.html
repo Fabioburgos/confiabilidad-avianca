@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <title>Document</title>
+    </head>
+    <body>
+            <div class="container has-text-centered">
+                <div class = "column is-half is-offset-one-quarter">
+                    <div class = "column is-half is-offset-one-quarter">
+                        <img src = "/static/images/avianca_logo.png">
+                    </div>
+                    <div class = "box">        
+                        <form method=post enctype="multipart/form-data">
+                            <div class = "field">
+                                <div class = "control">
+                                    <p>Escoge el archivo Amos: 
+                                    <input type="file" name="archivoamos" accept=".csv"></p>
+                                </div>
+                            </div>
+                            <div class = "field">
+                                <div class = "control">
+                                    <p>Escoge el archivo Airman: 
+                                    <input type="file" name="archivoairman" accept=".csv"></p>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="submit" value="Procesar documentos">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <p>Shape for Amos is: {{ shape_amos }}</p>
+        <p>Shape for Airman is : {{ shape_airman }}</p>
+        <p>Shape for Final is : {{ shape_final }}</p> -->
+    </body>
+</html>
